@@ -11,18 +11,15 @@ export const Container = styled.header`
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    
 
     .header-list {
-      display: flex;     
+      display: flex;
       gap: 70px;
-      
 
       .header-buttons {
         display: flex;
         gap: 50px;
         align-items: center;
-        
 
         button {
           border: none;
@@ -33,31 +30,31 @@ export const Container = styled.header`
       }
     }
 
-    .header-menu{
+    .header-menu {
+      display: flex;
+      gap: 30px;
+
+      .icons {
         display: flex;
-        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #555555;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
 
-        .icons{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid #555555;
-            width: 50px;;
-            height: 50px;
-            border-radius: 100%;
-
-            .icon-person{
-                width: 40px;
-                height: 45px;
-                color: #555555;
-            }
-
-            .icon-search{
-                width: 40px;
-                height: 25px;
-                color: #555555;
-            }
+        .icon-person {
+          width: 40px;
+          height: 45px;
+          color: #555555;
         }
+
+        .icon-search {
+          width: 40px;
+          height: 25px;
+          color: #555555;
+        }
+      }
     }
   }
 `;

@@ -1,10 +1,11 @@
 "use client"
-import { Header } from "@/components";
+import { Header, Main } from "@/components";
 
 export default function Home() {
   return (
     <>
       <Header />
+      <Main />
     </>
   );
 }
