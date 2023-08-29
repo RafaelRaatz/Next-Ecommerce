@@ -13,13 +13,17 @@ export const CardList = () => {
           <h2>Bacalhôa Meia Pipa Private Selection Castelão Syrah 2014</h2>
 
           <div className="wine-info">
-            <span className="discount">R$ 37,40</span>
-
-            <span className="promotion-price">Sócio Wine R$30,00</span>
+            <div>
+              <span className="discount">R$ 37,40</span>
+              <span className="percentage">60% OFF</span>
+            </div>
+            <div className="promotion-price">
+              <span>Sócio Wine</span>
+              <span className="price"> R$30,00</span>
+            </div>
             <span className="original-price">Não sócio R$37,40</span>
           </div>
         </div>
-        
       </CardContainer>
       <button>Adicionar</button>
     </Container>

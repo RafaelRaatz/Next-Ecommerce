@@ -54,8 +54,23 @@ export const CardContainer = styled.div`
         text-decoration: line-through
       }
 
+      .percentage{
+        font-size: 12px;
+        background-color: #CD853F;
+        padding: 2px;
+        border-radius: 2px;
+        margin-left: 10px;
+        color: #fff;
+      }
+
       .promotion-price{
         font-size: 14px;
+
+        .price{
+          font-size: 18px;
+          color: #B6116E;
+          font-weight: bold;
+        }
       }
 
       .original-price {

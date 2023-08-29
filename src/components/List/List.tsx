@@ -16,9 +16,7 @@ export const List = () => {
         <CardList />
         <CardList />
       </div>
-      <div className="show-more">
-        <button className="list-button">Mostrar mais</button>
-      </div>
+
     </Container>
   );
 };
