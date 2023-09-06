@@ -1,23 +1,22 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-display: flex;
-flex-direction: column;
-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
-
-button{
-  width: 256px;
-  height: 40px;
-  background-color: #7ebc43;
-  color: #fff;
-  border-radius: 5px;
-  border: none;
-  margin-bottom: 10px;
-  font-size: 18px;
-
-}
-`
+  button {
+    width: 256px;
+    height: 40px;
+    background-color: #7ebc43;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+`;
 
 export const CardContainer = styled.div`
   display: flex;
@@ -35,9 +34,13 @@ export const CardContainer = styled.div`
     align-items: center;
     gap: 20px;
 
-    h2 {
+    .title {
       display: flex;
       text-align: center;
+      
+    }
+
+    h2 {
       font-size: 14px;
       width: 232px;
     }
@@ -48,27 +51,27 @@ export const CardContainer = styled.div`
       align-items: center;
       gap: 10px;
 
-      .discount{
+      .discount {
         font-size: 12px;
         color: #808080;
-        text-decoration: line-through
+        text-decoration: line-through;
       }
 
-      .percentage{
+      .percentage {
         font-size: 12px;
-        background-color: #CD853F;
+        background-color: #cd853f;
         padding: 2px;
         border-radius: 2px;
         margin-left: 10px;
         color: #fff;
       }
 
-      .promotion-price{
+      .promotion-price {
         font-size: 14px;
 
-        .price{
+        .price {
           font-size: 18px;
-          color: #B6116E;
+          color: #b6116e;
           font-weight: bold;
         }
       }

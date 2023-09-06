@@ -43,6 +43,7 @@ export const Container = styled.header`
         height: 50px;
         border-radius: 100%;
 
+
         .icon-person {
           width: 40px;
           height: 45px;
@@ -53,6 +54,11 @@ export const Container = styled.header`
           width: 40px;
           height: 25px;
           color: #555555;
+        }
+
+        button {
+          border: none;
+          cursor: pointer;
         }
       }
     }
