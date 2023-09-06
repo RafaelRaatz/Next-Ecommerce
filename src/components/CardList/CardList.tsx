@@ -20,28 +20,28 @@ interface IShoppingCard {
 }
 
 export const CardList = ({ title, discont, promotion, price, id }: ICard) => {
-  const [shoopingCart, setShoopingCart] = useState<IShoppingCard[]>([]);
+  const [shoppingCart, setShoppingCart] = useState<IShoppingCard[]>([]);
   const updateProduct = useProductStore((state) => state.updateProduct);
 
-  console.log(shoopingCart);
+  console.log(shoppingCart);
 
   const handleAddToCart = (id: number) => {
     const wine = wines.find((wine: any) => wine.id === id);
-    const alreadyInShoopingCart = shoopingCart.find(
+    const alreadyInShoppingCart = shoppingCart.find(
       (item) => item.product.id === id
     );
 
     // if product is already in the shooping cart
 
-    if (alreadyInShoopingCart) {
-      const newShoopingCart: IShoppingCard[] = shoopingCart.map((item) => {
+    if (alreadyInShoppingCart) {
+      const newShoppingCart: IShoppingCard[] = shoppingCart.map((item) => {
         ({
           ...item,
-          quantity: item.quantity ++,
+          quantity: item.quantity++,
         });
         return item;
       });
-      setShoopingCart(newShoopingCart);
+      setShoppingCart(newShoppingCart);
 
       return;
     }
@@ -52,13 +52,12 @@ export const CardList = ({ title, discont, promotion, price, id }: ICard) => {
       product: wine!,
       quantity: 1,
     };
-    const newShoopingCart: IShoppingCard[] = [...shoopingCart, cartItem];
+    const newShoppingCart: IShoppingCard[] = [...shoppingCart, cartItem];
 
-    setShoopingCart(newShoopingCart);
-   
+    setShoppingCart(newShoppingCart);
   };
 
-  updateProduct(shoopingCart);
+  updateProduct(shoppingCart);
 
   return (
     <Container>
