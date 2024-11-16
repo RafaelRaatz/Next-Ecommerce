@@ -21,15 +21,21 @@ export const List = () => {
     }
 
     if (values === "60") {
-      const filtered = wines.filter((wine) => wine.promotion <= 60 && wine.promotion >= 40);
+      const filtered = wines.filter(
+        (wine) => wine.promotion <= 60 && wine.promotion >= 40
+      );
       return setWinesFiltered(filtered);
     }
     if (values === "100") {
-      const filtered = wines.filter((wine) => wine.promotion <= 200 && wine.promotion >= 100);
+      const filtered = wines.filter(
+        (wine) => wine.promotion <= 200 && wine.promotion >= 100
+      );
       return setWinesFiltered(filtered);
     }
     if (values === "200") {
-      const filtered = wines.filter((wine) => wine.promotion <= 500 && wine.promotion >= 200);
+      const filtered = wines.filter(
+        (wine) => wine.promotion <= 500 && wine.promotion >= 200
+      );
       return setWinesFiltered(filtered);
     }
     if (values === "500") {

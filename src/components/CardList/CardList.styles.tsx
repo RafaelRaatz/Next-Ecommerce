@@ -37,7 +37,6 @@ export const CardContainer = styled.div`
     .title {
       display: flex;
       text-align: center;
-      
     }
 
     h2 {

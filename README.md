@@ -1,12 +1,14 @@
-# Wine challenge
+# next Ecommerce
 
-Projeto Wine challenge criado em React.
+Este projeto é um layout de e-commerce desenvolvido com Next.js. 
+A estilização foi feita com styled components.
+O site consome dados de um objeto para exibir uma lista de produtos e suas informações. Podendo filtrar os produtos pelo preço e adiciona-los no carrinho.
 
 ## Iniciando Projeto
 
 Instalar dependencias:
 
-```cs
+```css
 yarn
 ```
 

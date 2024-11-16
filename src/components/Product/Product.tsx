@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Container } from "./Product.styles";
 import image from "../../../public/wine.jpeg";
 import Image from "next/image";
